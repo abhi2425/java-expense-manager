@@ -24,8 +24,8 @@ public class Login extends HttpServlet {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/expensemanager?autoReconnect=true&useSSL=false",
-					"root", "Abhinav@2425");
+					"jdbc:mysql://lyl3nln24eqcxxot.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/znpjgnsgyxpqvf05?autoReconnect=true&useSSL=false",
+					"hbk7uhuebpbiu824", "g4p548qlv5rc46z2");
 			PreparedStatement ps = con.prepareStatement(
 					"Select email,password,firstname  from credentials where email=? And password=?");
 			ps.setString(1, email);

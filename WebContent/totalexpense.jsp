@@ -89,8 +89,8 @@ body {
 		<%
 			Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection(
-				"jdbc:mysql://localhost:3306/expensemanager?autoReconnect=true&useSSL=false",
-				"root", "Abhinav@2425");
+				"jdbc:mysql://lyl3nln24eqcxxot.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/znpjgnsgyxpqvf05?autoReconnect=true&useSSL=false",
+				"hbk7uhuebpbiu824", "g4p548qlv5rc46z2");
 		try {
 			String query = "Select Name , Sum(itemprice),  _id  From expense Group by Name Order by Name";
 			PreparedStatement ps = con.prepareStatement(query);
